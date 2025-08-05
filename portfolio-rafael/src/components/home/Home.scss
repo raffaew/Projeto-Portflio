@@ -1,0 +1,63 @@
+@mixin center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin description-network {
+  @include center();
+  align-items: center;
+  border-radius: 12px;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.623);
+  color: #f1f5f9;
+  backdrop-filter: blur(2px); // efeito vidro fosco 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+.container {
+  display: flex;
+  justify-content: center;
+
+  .home {
+    @include center();
+    max-height: 900px;
+    max-width: 900px;
+    overflow-x: hidden;
+    gap: 2rem;
+
+    .home-description {
+      @include description-network();
+      width: 100%;
+
+      h1 {
+        font-size: 60px;
+      }
+      p {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+
+    .home-network {
+      @include description-network();
+      background-color: rgba(0, 0, 0, 0.39);
+      a {
+        display: inline-block;
+        line-height: 0;
+      }
+      .home-icons {
+        display: flex;
+        gap: 1rem;
+
+        .github {
+         filter: brightness(0) invert(1);
+        }
+
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+}
