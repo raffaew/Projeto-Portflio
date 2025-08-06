@@ -13,7 +13,7 @@ const HeroSection = () => {
         </div>
 
         <div className="home-network">
-          <h1>Minhas Redes</h1>
+          <h1>Conecte-se comigo</h1>
           <div className="home-icons">
             <a href="https://www.linkedin.com/in/raffaew/">
               <img src="./linkedin-png.png" alt="linkedin" />

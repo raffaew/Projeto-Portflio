@@ -1,0 +1,17 @@
+@mixin center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin description-network {
+  @include center();
+  align-items: center;
+  border-radius: 12px;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.623);
+  color: #f1f5f9;
+  backdrop-filter: blur(2px); // efeito vidro fosco 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}

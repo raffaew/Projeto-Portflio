@@ -18,10 +18,10 @@ const Header = () => {
             <Link to="/projetos">Projetos</Link>
           </li>
           <li>
-            <a href="/">Contato</a> 
+            <a href="mailto:raffa96dias@gmail.com">Contato</a> 
           </li>
           <li>
-            <a href="/">Curriculo</a> 
+            <a href="/CV_Rafael_Dias.pdf" target="blank">Currículo</a> 
           </li>
         </ul>
       </nav>

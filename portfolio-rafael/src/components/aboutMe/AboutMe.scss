@@ -1,0 +1,19 @@
+@use "../../stylesGlobal.scss" as *;
+
+.abautMe {
+  @include center();
+  gap: 1rem;
+  width: 100%;
+  color: white;
+
+  .description {
+    @include center();
+    @include description-network();
+    width: 1000px;
+    gap: 1rem;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
