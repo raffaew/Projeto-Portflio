@@ -1,0 +1,81 @@
+[
+  {
+    "category": "Linguagens de Programação",
+    "items": [
+      {
+        "id": 1,
+        "image": "/icon-js.png",
+        "title": "JavaScript",
+        "description": "Intermediário"
+      },
+      {
+        "id": 2,
+        "image": "/icon-ts.png",
+        "title": "TypeScript",
+        "description": "Intermediário"
+      }
+    ]
+  },
+  {
+    "category": "Linguagens de Marcação e Estilo",
+    "items": [
+      {
+        "id": 3,
+        "image": "/html5.png",
+        "title": "HTML5",
+        "description": "Avançado"
+      },
+      {
+        "id": 4,
+        "image": "/css3.png",
+        "title": "CSS3",
+        "description": "Avançado"
+      },
+      {
+        "id": 5,
+        "image": "/sass.png",
+        "title": "Sass",
+        "description": "Intermediário"
+      }
+    ]
+  },
+  {
+    "category": "Bibliotecas / Frameworks",
+    "items": [
+      {
+        "id": 6,
+        "image": "/react.png",
+        "title": "React",
+        "description": "Intermediário"
+      },
+      {
+        "id": 7,
+        "image": "/jest.png",
+        "title": "Jest",
+        "description": "Básico"
+      }
+    ]
+  },
+  {
+    "category": "Ferramentas",
+    "items": [
+      {
+        "id": 8,
+        "image": "/git.png",
+        "title": "Git",
+        "description": "Intermediário"
+      }
+    ]
+  },
+  {
+    "category": "Plataformas / Nuvem",
+    "items": [
+      {
+        "id": 9,
+        "image": "/azure.png",
+        "title": "Azure",
+        "description": "Básico"
+      }
+    ]
+  }
+]

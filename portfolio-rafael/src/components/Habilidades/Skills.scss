@@ -1,0 +1,34 @@
+@use "../../stylesGlobal.scss" as *;
+
+.skills {
+  @include center();
+  gap: 2rem;
+
+  .firstCard,
+  .secondCard {
+    @include description-network();
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    max-width: 1000px;
+
+    .category {
+      display: flex;
+      flex-direction: column;
+
+       h2 {
+           margin-bottom: 12px;
+        }
+
+      .cards {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+
+        img {
+          width: 48px;
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/header/Header';
 import AboutMe from './components/aboutMe/AboutMe';
-import Projetos from './components/Projects/Projects';
+import Skills from './components/Habilidades/Skills';
 import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
 import './App.scss';
@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sobre" element={<AboutMe />} />
-            <Route path="/projetos" element={<Projetos />} />
+            <Route path="/habilidades" element={<Skills />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
