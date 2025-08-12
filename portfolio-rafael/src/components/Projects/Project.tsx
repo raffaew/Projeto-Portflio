@@ -1,0 +1,85 @@
+import "./Project.scss";
+import { FaLink } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { useRef } from "react";
+import data from "../../data/dataProjects.json";
+
+const Project = () => {
+  const carousel = useRef<HTMLDivElement>(null);
+
+  const handleLeftClick = () => {
+    const el = carousel.current;
+    if (!el) return;
+    el.scrollTo({
+      left: el.scrollLeft - 540,
+      behavior: "smooth",
+    });
+  };
+
+  const handleRightClick = () => {
+    const el = carousel.current;
+    if (!el) return;
+    el.scrollTo({
+      left: el.scrollLeft + 540,
+      behavior: "smooth",
+    });
+  };
+
+  return (
+    <div className="projects">
+      <div className="frontEndMentor">
+        <div className="description">
+          <h3>Projetos responsivos</h3>
+          <p>
+            O Frontend Mentor é uma plataforma que oferece desafios práticos
+            para desenvolvedores front-end com base em designs prontos. Os
+            desafios variam de nível iniciante a avançado e são voltados para o
+            aprimoramento de habilidades como HTML, CSS, JavaScript,
+            acessibilidade, responsividade e boas práticas de layout.
+          </p>
+          <p>
+            Nesta seção, compartilho alguns projetos que desenvolvi a partir de
+            desafios da plataforma. Em cada um deles, reproduzi o layout
+            proposto com foco em responsividade e atenção aos detalhes visuais e
+            funcionais.
+          </p>
+        </div>
+        <div className="carousel">
+          <FaChevronLeft className="chevronLeft" onClick={handleLeftClick} />
+          <div className="cardsFrontEndMentor" ref={carousel}>
+            {data.map((project) => (
+              <div className="cardContainer" key={project.id}>
+                <div className="card">
+                  <div className="images">
+                    <img
+                      src={project.imageUrl}
+                      alt={project.alt}
+                    />
+                  </div>
+                </div>
+                <div className="links">
+                  <button>
+                    <a href={project.site} target="_blank" rel="noopener noreferrer">
+                      Ver Site
+                    </a>
+                    <FaLink className="icon" />
+                  </button>
+                  <button>
+                    <a href={project.code} target="_blank" rel="noopener noreferrer">
+                      Ver Código
+                    </a>
+                    <FaGithub className="icon" />
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+          <FaChevronRight className="chevronRight" onClick={handleRightClick} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Project;

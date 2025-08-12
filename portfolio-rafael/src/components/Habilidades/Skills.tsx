@@ -1,6 +1,6 @@
 import "./Skills.scss";
 import type { CardItem } from "../../types/CardItem";
-import data from "../../data/data.json";
+import data from "../../data/dataSkills.json";
 
 // Tipo para a estrutura de categoria
 interface Category {

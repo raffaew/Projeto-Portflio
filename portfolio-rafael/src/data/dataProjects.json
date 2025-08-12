@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "site": "https://raffaew.github.io/FrontEndMentor/3-column-preview-card-component-main/",
+    "code": "https://github.com/raffaew/FrontEndMentor/tree/main/3-column-preview-card-component-main",
+    "imageUrl": "/3-column-preview-card-component.png",
+    "alt": "3 Column Preview Card Component"
+  },
+  {
+    "id": 2,
+    "site": "https://raffaew.github.io/FrontEndMentor/interactive-rating-component-main/",
+    "code": "https://github.com/raffaew/FrontEndMentor/tree/main/interactive-rating-component-main",
+    "imageUrl": "/interactive-rating-component.png",
+    "alt": "Interactive Rating Component"
+  },
+  {
+    "id": 3,
+    "site": "https://raffaew.github.io/FrontEndMentor/single-price-grid-component-master/",
+    "code": "https://github.com/raffaew/FrontEndMentor/tree/main/single-price-grid-component-master",
+    "imageUrl": "/single-price-grid-component.png",
+    "alt": "Single Price Grid Component"
+  },
+  {
+    "id": 4,
+    "site": "https://raffaew.github.io/FrontEndMentor/stats-preview-card-component-main/",
+    "code": "https://github.com/raffaew/FrontEndMentor/tree/main/stats-preview-card-component-main",
+    "imageUrl": "/stats-preview-card-component.png",
+    "alt": "Stats Preview Card Component"
+  }
+]

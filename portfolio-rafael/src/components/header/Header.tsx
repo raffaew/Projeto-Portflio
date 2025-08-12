@@ -18,6 +18,9 @@ const Header = () => {
             <Link to="/habilidades">Habilidades</Link>
           </li>
           <li>
+            <Link to="/projetos">Portfólio de Projetos</Link>
+          </li>
+          <li>
             <a href="mailto:raffa96dias@gmail.com">Contato</a> 
           </li>
           <li>
