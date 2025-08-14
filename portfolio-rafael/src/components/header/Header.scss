@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 3rem;
+  // padding: 1.2rem 3rem;
   background: #000000;
   color: #f8fafc;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
@@ -15,7 +15,7 @@
   text-decoration: none;
   color: #38bdf8;
   transition: color 0.3s ease;
-  
+
   &:hover {
     color: #7dd3fc;
   }
@@ -37,6 +37,14 @@
   transition: color 0.3s ease;
 }
 
+.menu-toggle {
+  z-index: 10;
+  display: block;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+}
+
 .nav-links a::after {
   content: "";
   display: block;
@@ -55,4 +63,19 @@
 
 .nav-links a:hover::after {
   width: 100%;
+}
+
+@media (max-width: 500px) {
+  .nav-links {
+   ul {
+    display: none;
+   }
+
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+      z-index: 10;
+      color: #f8fafc;
+    }
+  }
 }
