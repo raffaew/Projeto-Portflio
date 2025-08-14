@@ -113,3 +113,59 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .projects {
+    margin-top: 1rem;
+    padding: 0.5rem;
+
+    .frontEndMentor,
+    .tests {
+      width: 100%;
+
+      .description {
+        padding: 0.5rem;
+      }
+      .carousel {
+        margin-top: 2rem;
+        .chevronLeft,
+        .chevronRight {
+          display: none;
+        }
+        .cardsFrontEndMentor {
+          flex-direction: column;
+          padding: 0rem;
+          gap: 4rem;
+          overflow: hidden;
+
+          .card {
+            width: 100%;
+            height: 100%;
+            img {
+              width: 400px;
+            }
+          }
+
+          .links {
+            gap: 0;
+            padding: 10px;
+          }
+        }
+      }
+    }
+
+    .tests {
+      margin-top: 3rem;
+      .cardContainer {
+        margin-top: 2rem;
+        .card {
+          width: 100%;
+          height: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

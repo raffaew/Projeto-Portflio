@@ -32,11 +32,15 @@ const Project = () => {
         <div className="description">
           <h3>Projetos Responsivos</h3>
           <p>
-            O <a href="https://www.frontendmentor.io/" target="blank">Frontend Mentor</a>  é uma plataforma que oferece desafios práticos
-            para desenvolvedores front-end com base em designs prontos. Os
-            desafios variam de nível iniciante a avançado e são voltados para o
-            aprimoramento de habilidades como HTML, CSS, JavaScript,
-            acessibilidade, responsividade e boas práticas de layout.
+            O{" "}
+            <a href="https://www.frontendmentor.io/" target="blank">
+              Frontend Mentor
+            </a>{" "}
+            é uma plataforma que oferece desafios práticos para desenvolvedores
+            front-end com base em designs prontos. Os desafios variam de nível
+            iniciante a avançado e são voltados para o aprimoramento de
+            habilidades como HTML, CSS, JavaScript, acessibilidade,
+            responsividade e boas práticas de layout.
           </p>
           <p>
             Nesta seção, compartilho alguns projetos que desenvolvi a partir de
@@ -89,40 +93,54 @@ const Project = () => {
           <h3>Projetos Com Testes</h3>
           <p>
             Nesta seção, apresento um projeto que desenvolvi com foco em testes
-            unitários. A implementação de testes é fundamental para garantir
-            a qualidade e a confiabilidade do código, permitindo que mudanças
-            futuras sejam feitas com mais segurança. 
+            unitários. A implementação de testes é fundamental para garantir a
+            qualidade e a confiabilidade do código, permitindo que mudanças
+            futuras sejam feitas com mais segurança.
           </p>
 
           <p>
-            Fiz um to-do-list que inclui funcionalidades como adicionar, remover e marcar tarefas como concluídas. Cada funcionalidade foi acompanhada por testes unitários para verificar seu correto funcionamento.
+            Fiz um to-do-list que inclui funcionalidades como adicionar, remover
+            e marcar tarefas como concluídas. Cada funcionalidade foi
+            acompanhada por testes unitários para verificar seu correto
+            funcionamento.
           </p>
 
           <p>
-            Os testes foram escritos utilizando a biblioteca Jest, que é amplamente utilizada para testar aplicações JavaScript. Através desses testes, pude garantir que cada parte do código funcionasse como esperado, minimizando bugs e melhorando a manutenção do projeto.
+            Os testes foram escritos utilizando a biblioteca Jest, que é
+            amplamente utilizada para testar aplicações JavaScript. Através
+            desses testes, pude garantir que cada parte do código funcionasse
+            como esperado, minimizando bugs e melhorando a manutenção do
+            projeto.
           </p>
         </div>
 
-         <div className="cardContainer">
-              <div className="card">
-                <div className="images">
-                  <img
-                    src="/to-do-list.png"
-                    alt="3-column-preview-card"
-                  />
-                </div>
-              </div>
-              <div className="links">
-                <button>
-                  <a href="https://raffaew.github.io/testing-library-com-vite/" target="blank">Ver Site</a>
-                  <FaLink className="icon" />
-                </button>
-                <button>
-                  <a href="https://github.com/raffaew/testing-library-com-vite/tree/main/page-to-do-list" target="blank">Ver Código</a>
-                  <FaGithub className="icon" />
-                </button>
-              </div>
+        <div className="cardContainer">
+          <div className="card">
+            <div className="images">
+              <img src="/to-do-list.png" alt="3-column-preview-card" />
             </div>
+          </div>
+          <div className="links">
+            <button>
+              <a
+                href="https://raffaew.github.io/testing-library-com-vite/"
+                target="blank"
+              >
+                Ver Site
+              </a>
+              <FaLink className="icon" />
+            </button>
+            <button>
+              <a
+                href="https://github.com/raffaew/testing-library-com-vite/tree/main/page-to-do-list"
+                target="blank"
+              >
+                Ver Código
+              </a>
+              <FaGithub className="icon" />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

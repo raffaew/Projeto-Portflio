@@ -46,3 +46,26 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0.5rem;
+     
+    .home .home-description, .home-network {
+      width: 100%;
+        h1 {
+        font-size: 23px;
+      }
+
+      p {
+        font-size: 16px;
+        text-align: justify;
+        margin-top: 1rem;
+      }
+
+      .home-icons {
+        margin-top: 1rem;
+      }
+    } 
+  }
+}

@@ -32,3 +32,34 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .skills {
+    margin-top: 1rem;
+    padding: 0.5rem;
+
+    .firstCard,
+    .secondCard {
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      gap: 2rem;
+
+      .category {
+        width: 100%;
+        text-align: center;
+        h2 {
+          font-size: 20px;
+        }
+
+        .cards {
+          flex-wrap: wrap;
+          justify-content: center;
+          h3 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
