@@ -16,7 +16,7 @@ const HeroSection = () => {
           <h1>Conecte-se comigo</h1>
           <div className="home-icons">
             <a href="https://www.linkedin.com/in/raffaew/" target="blank">
-              <img className="linkedin" src="./linkedin-png.png" alt="linkedin" />
+              <img className="linkedin" src="/linkedin-png.png" alt="linkedin" />
             </a>
 
             <a href="https://github.com/raffaew" target="blank">
