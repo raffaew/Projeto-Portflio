@@ -117,7 +117,7 @@ const Project = () => {
         <div className="cardContainer">
           <div className="card">
             <div className="images">
-              <img src="/to-do-list.png" alt="3-column-preview-card" />
+              <img src="/portfolio-rafael/to-do-list.png" alt="3-column-preview-card" />
             </div>
           </div>
           <div className="links">

@@ -4,13 +4,13 @@
     "items": [
       {
         "id": 1,
-        "image": "/icon-js.png",
+        "image": "/portfolio-rafael/icon-js.png",
         "title": "JavaScript",
         "description": "Intermediário"
       },
       {
         "id": 2,
-        "image": "/icon-ts.png",
+        "image": "/portfolio-rafael/icon-ts.png",
         "title": "TypeScript",
         "description": "Intermediário"
       }
@@ -21,19 +21,19 @@
     "items": [
       {
         "id": 3,
-        "image": "/html5.png",
+        "image": "/portfolio-rafael/html5.png",
         "title": "HTML5",
         "description": "Avançado"
       },
       {
         "id": 4,
-        "image": "/css3.png",
+        "image": "/portfolio-rafael/css3.png",
         "title": "CSS3",
         "description": "Avançado"
       },
       {
         "id": 5,
-        "image": "/sass.png",
+        "image": "/portfolio-rafael/sass.png",
         "title": "Sass",
         "description": "Intermediário"
       }
@@ -44,13 +44,13 @@
     "items": [
       {
         "id": 6,
-        "image": "/react.png",
+        "image": "/portfolio-rafael/react.png",
         "title": "React",
         "description": "Intermediário"
       },
       {
         "id": 7,
-        "image": "/jest.png",
+        "image": "/portfolio-rafael/jest.png",
         "title": "Jest",
         "description": "Básico"
       }
@@ -61,7 +61,7 @@
     "items": [
       {
         "id": 8,
-        "image": "/git.png",
+        "image": "/portfolio-rafael/git.png",
         "title": "Git",
         "description": "Intermediário"
       }
@@ -72,7 +72,7 @@
     "items": [
       {
         "id": 9,
-        "image": "/azure.png",
+        "image": "/portfolio-rafael/azure.png",
         "title": "Azure",
         "description": "Básico"
       }
