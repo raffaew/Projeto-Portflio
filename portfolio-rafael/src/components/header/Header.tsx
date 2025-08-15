@@ -21,35 +21,15 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  console.log("mobile:", isMobile, "menuOpen:", menuOpen, window.innerWidth);
+const closeMenu = () => {
+  setMenuOpen(false)
+}
 
   return (
-    <header className="header">
+    <header className={menuOpen ? "header mobile" : "header"}>
       <div className="logo">
         <Link to="/">{"< Rafael />"}</Link>
       </div>
-
-      <nav className="nav-links">
-        <ul className={`nav-menu ${menuOpen ? "open" : ""}`}>
-          <li>
-            <Link to="/sobre">Sobre mim</Link>
-          </li>
-          <li>
-            <Link to="/habilidades">Habilidades</Link>
-          </li>
-          <li>
-            <Link to="/projetos">Portfólio de Projetos</Link>
-          </li>
-          <li>
-            <a href="mailto:raffa96dias@gmail.com">Contato</a>
-          </li>
-          <li>
-            <a href="/CV_Rafael_Dias.pdf" target="blank">
-              Currículo
-            </a>
-          </li>
-        </ul>
-      </nav>
 
       {isMobile && (
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
@@ -60,6 +40,28 @@ const Header = () => {
           }
         </button>
       )}
+
+      <nav className="nav-links">
+        <ul className="nav-menu">
+          <li>
+            <Link onClick={closeMenu} to="/sobre">Sobre mim</Link>
+          </li>
+          <li>
+            <Link onClick={closeMenu} to="/habilidades">Habilidades</Link>
+          </li>
+          <li>
+            <Link onClick={closeMenu} to="/projetos">Portfólio de Projetos</Link>
+          </li>
+          <li>
+            <a onClick={closeMenu} href="mailto:raffa96dias@gmail.com">Contato</a>
+          </li>
+          <li>
+            <a onClick={closeMenu} href="/CV_Rafael_Dias.pdf" target="blank">
+              Currículo
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };
