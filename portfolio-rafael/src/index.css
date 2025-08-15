@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url('/portfolio-rafael/background.jpg');
+    background-image: url('/portfolio-rafael/public/background.jpg');
     background-size: cover;
     background-position: center;
 
