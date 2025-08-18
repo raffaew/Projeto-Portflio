@@ -10,7 +10,7 @@
       },
       {
         "id": 2,
-        "image": "./portfolio-rafael/icon-ts.png",
+        "image": "/portfolio-rafael/icon-ts.png",
         "title": "TypeScript",
         "description": "Intermediário"
       }
@@ -33,7 +33,7 @@
       },
       {
         "id": 5,
-        "image": "./portfolio-rafael/sass.png",
+        "image": "/portfolio-rafael/sass.png",
         "title": "Sass",
         "description": "Intermediário"
       }
@@ -44,7 +44,7 @@
     "items": [
       {
         "id": 6,
-        "image": "./portfolio-rafael/react.png",
+        "image": "/portfolio-rafael/react.png",
         "title": "React",
         "description": "Intermediário"
       },
@@ -61,7 +61,7 @@
     "items": [
       {
         "id": 8,
-        "image": "./portfolio-rafael/git.png",
+        "image": "/portfolio-rafael/git.png",
         "title": "Git",
         "description": "Intermediário"
       }
@@ -72,7 +72,7 @@
     "items": [
       {
         "id": 9,
-        "image": "./portfolio-rafael/azure.png",
+        "image": "/portfolio-rafael/azure.png",
         "title": "Azure",
         "description": "Básico"
       }
