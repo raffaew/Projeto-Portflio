@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "tsc -b && vite build",
-  "preview": "vite preview",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-},
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
+    "@types/node": "^24.3.0",
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
     "@types/swiper": "^6.0.0",
@@ -34,5 +35,4 @@
     "vite": "^7.0.4"
   },
   "homepage": "https://raffaew.github.io/portfolio-rafael"
-
 }
