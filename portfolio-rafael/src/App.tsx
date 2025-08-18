@@ -10,7 +10,7 @@ import './App.scss';
 function App() {
   return (
     <div className="app-container">
-      <Router>
+      <Router basename='/portfolio-rafael'>
         <Header />
         <main className="main-content">
           <Routes>
