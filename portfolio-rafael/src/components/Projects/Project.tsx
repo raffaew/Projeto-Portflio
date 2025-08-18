@@ -2,11 +2,26 @@ import "./Project.scss";
 import { FaLink } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { useRef } from "react";
-import data from "../../data/dataProjects.json";
+import { useEffect, useRef, useState } from "react";
+import dataDesktop from "../../data/dataProjects.json";
+import dataMobile from "../../data/dataProjectsMobile.json";
 
 const Project = () => {
   const carousel = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 500) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleLeftClick = () => {
     const el = carousel.current;
@@ -45,45 +60,84 @@ const Project = () => {
           <p>
             Nesta seção, compartilho alguns projetos que desenvolvi a partir de
             desafios da plataforma. Em cada um deles, reproduzi o layout
-            proposto com foco em responsividade e atenção aos detalhes visuais e
-            funcionais.
+            proposto com foco em responsividade e atenção aos detalhes visuais.
           </p>
         </div>
         <div className="carousel">
           <FaChevronLeft className="chevronLeft" onClick={handleLeftClick} />
-          <div className="cardsFrontEndMentor" ref={carousel}>
-            {data.map((project) => (
-              <div className="cardContainer" key={project.id}>
-                <div className="card">
-                  <div className="images">
-                    <img src={project.imageUrl} alt={project.alt} />
+          {isMobile ? (
+            <div className="cardsFrontEndMentor" ref={carousel}>
+              {dataMobile.map((project) => (
+                <div className="cardContainer" key={project.id}>
+                  <div className="card">
+                    <div className="images imagesMobile">
+                      <img
+                        src={project.imageUrl}
+                        alt={project.alt}
+                        width={200}
+                      />
+                    </div>
+                  </div>
+                  <div className="links">
+                    <button>
+                      <a
+                        href={project.site}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Ver Site
+                      </a>
+                      <FaLink className="icon" />
+                    </button>
+                    <button>
+                      <a
+                        href={project.code}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Ver Código
+                      </a>
+                      <FaGithub className="icon" />
+                    </button>
                   </div>
                 </div>
-                <div className="links">
-                  <button>
-                    <a
-                      href={project.site}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Ver Site
-                    </a>
-                    <FaLink className="icon" />
-                  </button>
-                  <button>
-                    <a
-                      href={project.code}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Ver Código
-                    </a>
-                    <FaGithub className="icon" />
-                  </button>
+              ))}
+            </div>
+          ) : (
+            <div className="cardsFrontEndMentor" ref={carousel}>
+              {dataDesktop.map((project) => (
+                <div className="cardContainer" key={project.id}>
+                  <div className="card">
+                    <div className="images">
+                      <img src={project.imageUrl} alt={project.alt} />
+                    </div>
+                  </div>
+                  <div className="links">
+                    <button>
+                      <a
+                        href={project.site}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Ver Site
+                      </a>
+                      <FaLink className="icon" />
+                    </button>
+                    <button>
+                      <a
+                        href={project.code}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Ver Código
+                      </a>
+                      <FaGithub className="icon" />
+                    </button>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
           <FaChevronRight className="chevronRight" onClick={handleRightClick} />
         </div>
       </div>
@@ -116,9 +170,21 @@ const Project = () => {
 
         <div className="cardContainer">
           <div className="card">
-            <div className="images">
-              <img src="/portfolio-rafael/to-do-list.png" alt="3-column-preview-card" />
-            </div>
+            {isMobile ? (
+              <div className="images imagesMobile">
+                <img
+                  src="/portfolio-rafael/to-do-list-mobile.jpg"
+                  alt="3-column-preview-card"
+                />
+              </div>
+            ) : (
+              <div className="images">
+                <img
+                  src="/portfolio-rafael/to-do-list.png"
+                  alt="3-column-preview-card"
+                />
+              </div>
+            )}
           </div>
           <div className="links">
             <button>
