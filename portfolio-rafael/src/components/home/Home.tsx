@@ -16,11 +16,11 @@ const HeroSection = () => {
           <h1>Conecte-se comigo</h1>
           <div className="home-icons">
             <a href="https://www.linkedin.com/in/raffaew/" target="blank">
-              <img className="linkedin" src="../../../public/linkedin-png.png" alt="linkedin" />
+              <img src={`${import.meta.env.BASE_URL}linkedin-png.png`} alt="LinkedIn" />
             </a>
 
             <a href="https://github.com/raffaew" target="blank">
-              <img className="github" src="../../../public/github-png.png" alt="github" />
+             <img src={`${import.meta.env.BASE_URL}github-png.png`} alt="GitHub" />
             </a>
           </div>
         </div>
