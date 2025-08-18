@@ -173,14 +173,14 @@ const Project = () => {
             {isMobile ? (
               <div className="images imagesMobile">
                 <img
-                  src="/public/to-do-list-mobile.jpg"
+                  src="../../public/to-do-list-mobile.jpg"
                   alt="3-column-preview-card"
                 />
               </div>
             ) : (
               <div className="images">
                 <img
-                  src="/public/to-do-list.png"
+                  src="../../public/to-do-list.png"
                   alt="3-column-preview-card"
                 />
               </div>
