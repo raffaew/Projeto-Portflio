@@ -56,7 +56,7 @@ const closeMenu = () => {
             <a onClick={closeMenu} href="mailto:raffa96dias@gmail.com">Contato</a>
           </li>
           <li>
-            <a onClick={closeMenu} href="/CV_Rafael_Dias.pdf" target="blank">
+            <a onClick={closeMenu} href="/portfolio-rafael/CV_Rafael_Dias.pdf" target="blank">
               Currículo
             </a>
           </li>

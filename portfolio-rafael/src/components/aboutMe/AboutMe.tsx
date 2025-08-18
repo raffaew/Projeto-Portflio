@@ -14,7 +14,7 @@ const AboutMe = () => {
           Após nove meses, fui promovido a desenvolvedor front-end júnior e passei a integrar um novo projeto focado em React. Desde então, venho me aprofundando no ecossistema front-end moderno, aplicando na prática os conceitos da biblioteca e ampliando constantemente minhas habilidades. Hoje, atuo na criação de interfaces responsivas e componentes reutilizáveis, sempre priorizando performance, organização e boas práticas de desenvolvimento.
         </p>
         <p>
-          Hoje, dedico meu tempo a estudar React e ampliar meus conhecimentos, focando em gerar resultados com eficiência, aplicar boas práticas de programação e priorizar a experiência do usuário.
+          Dedico meu tempo a estudar React e ampliar meus conhecimentos.
         </p>
       </div>
         
