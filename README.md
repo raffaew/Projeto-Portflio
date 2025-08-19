@@ -15,7 +15,7 @@ Este portfólio tem como objetivo mostrar minha **trajetória de aprendizado**, 
 ## 📫 Contato
 Se quiser trocar uma ideia ou dar feedback, pode me encontrar em:  
 
-- 💼 [LinkedIn](https://linkedin.com/in/SEU-LINKEDIN)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/raffaew/)  
 - 📧 **raffa96dias@gmail.com**
 
 ## [Acesse meu portfólio](https://raffaew.github.io/portfolio-rafael/)
